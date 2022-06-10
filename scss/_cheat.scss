@@ -1,0 +1,24 @@
+#cheat {
+    position: relative;
+    float: right;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    z-index: 10;
+    &.active {
+        display: flex;
+      }
+    button {
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        color: $w;
+        background-color: $gray-600;
+        text-transform: uppercase;
+    }
+    button:hover, button:active {
+        background: $gray-800;
+    }
+}
