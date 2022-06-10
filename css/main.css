@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  font-family: 'Fredoka One';
+  font-size: 8em;
+}
+
+h2 {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/*# sourceMappingURL=main.css.map */
