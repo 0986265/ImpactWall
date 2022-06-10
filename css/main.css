@@ -10,20 +10,17 @@ h2 {
 }
 
 #attract-screen {
-  width: 200px;
-  height: 200px;
+  height: 100%;
   background-color: blue;
 }
 
 #intro-screen {
-  width: 200px;
-  height: 200px;
+  height: 100%;
   background-color: green;
 }
 
 #game-screen {
-  width: 200px;
-  height: 200px;
+  height: 100%;
   background-color: red;
 }
 
@@ -32,7 +29,18 @@ h2 {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+}
+
+#impact-wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2572px;
+  height: 1170px;
+}
+
+#impact-wall .visible {
+  opacity: 100%;
 }
 /*# sourceMappingURL=main.css.map */

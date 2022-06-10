@@ -10,6 +10,18 @@
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+  // opacity: 0%;
+}
+
+#impact-wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2572px;
+  height: 1170px;
+
+  .visible {
+    opacity: 100%;
+  }
 }
