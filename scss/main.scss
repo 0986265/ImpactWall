@@ -1,6 +1,10 @@
 @import "typography";
 @import "variables";
 
+@import "screens/attract-screen";
+@import "screens/intro-screen";
+@import "screens/game-screen";
+
 * {
   margin: 0;
   padding: 0;
