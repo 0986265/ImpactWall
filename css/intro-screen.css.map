@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,KAAK;CAC1B",
-    "sources": [
-        "../scss/screens/intro-screen.scss"
-    ],
-    "names": [],
-    "file": "intro-screen.css"
-}

@@ -5,9 +5,9 @@
         "../scss/main.scss",
         "../scss/_typography.scss",
         "../scss/_variables.scss",
-        "../scss/screens/attract-screen.scss",
-        "../scss/screens/intro-screen.scss",
-        "../scss/screens/game-screen.scss"
+        "../scss/screens/_attract-screen.scss",
+        "../scss/screens/_intro-screen.scss",
+        "../scss/screens/_game-screen.scss"
     ],
     "names": [],
     "file": "main.css"
