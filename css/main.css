@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 h1 {
-  text-align: center;
   font-family: 'Fredoka One';
   font-size: 5em;
 }
@@ -17,6 +16,37 @@ h2 {
 #intro-screen {
   height: 100%;
   background-color: green;
+}
+
+#intro-screen .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#intro-screen .col-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid white;
+  z-index: 0;
+}
+
+#intro-screen .col-2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid white;
+  z-index: 0;
+}
+
+#intro-screen .col-3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid white;
+  z-index: 0;
 }
 
 #game-screen {
@@ -38,9 +68,5 @@ h2 {
   left: 0;
   width: 2572px;
   height: 1170px;
-}
-
-#impact-wall .visible {
-  opacity: 100%;
 }
 /*# sourceMappingURL=main.css.map */

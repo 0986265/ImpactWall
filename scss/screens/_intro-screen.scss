@@ -1,4 +1,23 @@
 #intro-screen {
     height: 100%;
     background-color: green;
+    .columns{
+        display: flex;
+        height: 100%;
+    }
+    .col-1 {
+        flex: 1;
+        border: 1px solid white;
+        z-index: 0;
+    };
+    .col-2 {
+        flex: 1;
+        border: 1px solid white;
+        z-index: 0;
+    };
+    .col-3 {
+        flex: 1;
+        border: 1px solid white;
+        z-index: 0;
+    };
 }

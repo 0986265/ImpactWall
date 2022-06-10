@@ -11,7 +11,7 @@
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  // opacity: 0%;
+  // display: none;
 }
 
 #impact-wall {
@@ -21,7 +21,7 @@
   width: 2572px;
   height: 1170px;
 
-  .visible {
-    opacity: 100%;
+  .active {
+    // display: block;
   }
 }
