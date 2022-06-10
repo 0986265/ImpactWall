@@ -62,11 +62,16 @@ h2 {
   vertical-align: baseline;
 }
 
+.screen {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 #impact-wall {
   position: absolute;
   top: 0;
   left: 0;
-  width: 2572px;
-  height: 1170px;
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
