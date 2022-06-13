@@ -1,10 +1,12 @@
 @import "typography";
 @import "variables";
 @import "cheat";
+@import "timer";
 
 @import "screens/attract-screen";
 @import "screens/intro-screen";
 @import "screens/game-screen";
+@import "screens/question-screen";
 
 * {
   margin: 0;
@@ -30,10 +32,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-
-  // .active {
-  //   display: block;
-  // }
 }
 
 .item {

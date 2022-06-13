@@ -1,4 +1,39 @@
 #attract-screen {
     height: 100%;
+    color: $w;
+    text-shadow: 0px 0px 35px rgba(0,0,0,0.75);
+    text-align: center;
     background-color: $screen1;
+    background: url('/media/images/bg-brick-wall.jpg');
+}
+
+goomba{
+    position: absolute;
+    left: 450px;
+    bottom: 30px;
+    width: 250px;
+    height: 300px;
+    background: url('/media/images/goomba.png') no-repeat;
+    background-size: contain;
+}
+
+goombastack{
+    position: absolute;
+    right: 150px;
+    bottom: 20px;
+    width: 300px;
+    height: 975px;
+    background: url('/media/images/goomba-stack.png') no-repeat;
+    background-size: contain;
+}
+
+goombawings{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    width: 360px;
+    height: 360px;
+    background: url('/media/images/goomba-wings.png') no-repeat;
+    transform: scaleX(-1);
+    background-size: contain;
 }
