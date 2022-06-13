@@ -14,11 +14,12 @@
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  overflow: hidden;
 }
 
 .screen {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 100px;
+  padding-right: 100px;
   display: none;
 }
 
@@ -28,10 +29,10 @@
 
 #impact-wall {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 2532px + 1px;
+  height: 1170px + 1px;
 }
 
 .item {

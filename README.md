@@ -29,3 +29,10 @@ This is the web based version of Impact Wall.
         }
     ]
 ```
+<br>
+
+## Developing
+1. Make sure to open dev tools in the browser.
+2. Set the dimensions to responsive
+3. Use the following resolution: 2532 px * 1170 px
+4. Happy developing 🥳

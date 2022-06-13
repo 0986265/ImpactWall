@@ -14,30 +14,35 @@ h2 {
 }
 
 #cheat {
-  position: relative;
-  float: right;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  position: absolute;
+  top: 1095px;
+  left: 0px;
   z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
 }
 
 #cheat.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #cheat button {
-  width: 300px;
-  height: 100px;
-  margin-bottom: 10px;
-  font-size: 30px;
+  width: 225px;
+  height: 75px;
+  font-size: 25px;
   font-weight: bold;
+  opacity: 0.75;
   color: #ffffff;
   background-color: #6c6c6c;
   text-transform: uppercase;
@@ -108,7 +113,7 @@ svg circle {
   text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.75);
   text-align: center;
   background-color: #eb5d5d;
-  background: url("/media/images/bg-brick-wall.jpg");
+  background: url("/media/images/bg-brick-wall.jpg") no-repeat;
 }
 
 goomba {
@@ -195,11 +200,12 @@ goombawings {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  overflow: hidden;
 }
 
 .screen {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 100px;
+  padding-right: 100px;
   display: none;
 }
 
@@ -209,10 +215,10 @@ goombawings {
 
 #impact-wall {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 2533px;
+  height: 1171px;
 }
 
 .item {
