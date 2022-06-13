@@ -1,4 +1,4 @@
-const dev = true;
+const dev = false;
 let currentScreen = 1;
 
 (function checkDevMode() {
