@@ -10,12 +10,16 @@ h1 {
 }
 
 h2 {
+  font-size: 4rem;
+}
+
+p {
   font-size: 3rem;
 }
 
 #cheat {
   position: absolute;
-  top: 1095px;
+  top: 995px;
   left: 0px;
   z-index: 10;
   -webkit-box-pack: center;
@@ -39,7 +43,7 @@ h2 {
 
 #cheat button {
   width: 225px;
-  height: 75px;
+  height: 175px;
   font-size: 25px;
   font-weight: bold;
   opacity: 0.75;
@@ -53,9 +57,10 @@ h2 {
 }
 
 #countdown {
-  position: relative;
+  position: absolute;
   margin: auto;
-  margin-top: 100px;
+  top: 100px;
+  right: 100px;
   height: 400px;
   width: 400px;
   text-align: center;
@@ -116,6 +121,21 @@ svg circle {
   background: url("/media/images/bg-brick-wall.jpg") no-repeat;
 }
 
+#attract-screen h1 {
+  -webkit-animation: pulse 4s ease-in-out 0s infinite normal none;
+          animation: pulse 4s ease-in-out 0s infinite normal none;
+}
+
+#attract-screen h2 {
+  -webkit-animation: fade 6s ease-in-out 0s infinite normal none;
+          animation: fade 6s ease-in-out 0s infinite normal none;
+}
+
+#attract-title {
+  position: relative;
+  top: 150px;
+}
+
 goomba {
   position: absolute;
   left: 450px;
@@ -146,6 +166,60 @@ goombawings {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   background-size: contain;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fade {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fade {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.6;
+  }
 }
 
 #intro-screen {
@@ -204,8 +278,8 @@ goombawings {
 }
 
 .screen {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   display: none;
 }
 

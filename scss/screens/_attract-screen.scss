@@ -5,6 +5,18 @@
     text-align: center;
     background-color: $screen1;
     background: url('/media/images/bg-brick-wall.jpg') no-repeat;
+    h1 {
+        animation: pulse 4s ease-in-out 0s infinite normal none;
+    }
+    
+    h2 {
+        animation: fade 6s ease-in-out 0s infinite normal none;
+    }
+}
+
+#attract-title {
+    position: relative;
+    top: 150px;
 }
 
 goomba{
@@ -36,4 +48,31 @@ goombawings{
     background: url('/media/images/goomba-wings.png') no-repeat;
     transform: scaleX(-1);
     background-size: contain;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes fade {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0.6;
+	}
 }

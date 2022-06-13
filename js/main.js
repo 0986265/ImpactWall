@@ -1,6 +1,7 @@
 const dev = true;
 let currentScreen = 1;
 
+
 (function checkDevMode() {
   if (dev) {
     console.log("debug mode enabled");
@@ -15,15 +16,15 @@ let currentScreen = 1;
 // 
 // SCREEN CURRENT STATE MANAGER
 // 
-document.body.onkeyup = function(e) {
+document.body.onkeydown = function(e) {
   if (currentScreen === 1 && e.key == " " ||
-      currentScreen === 1 && e.code == "Space") {
+      currentScreen === 1 && e.code == "space") {
       document.getElementById('attract-screen').classList.remove('active');
       document.getElementById('intro-screen').classList.add('active');
       console.log(`current screen: ${currentScreen}`);
       countdownTimer();
       currentScreen++;
-    } else {
+    } else if ('oof'){
       
   }
 }
@@ -66,5 +67,4 @@ if (currentScreen === 1) {
       }
     }, 1000);
   }
-}  
-
+}
