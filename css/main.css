@@ -118,7 +118,7 @@ h2 {
   height: 100vh;
 }
 
-#impact-wall .active {
-  display: block;
+.item {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
