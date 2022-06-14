@@ -1,4 +1,7 @@
 #intro-screen {
     height: 100%;
     background-color: $screen2;
+    p {
+        max-width: 80%;
+    }
 }
