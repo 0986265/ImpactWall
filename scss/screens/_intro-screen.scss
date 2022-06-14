@@ -1,7 +1,22 @@
 #intro-screen {
     height: 100%;
     background-color: $screen2;
-    p {
-        max-width: 80%;
+    background: url('/media/images/main-bg.jpg') no-repeat;
+}
+
+.box {
+    position: absolute; 
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background-color: $w;
+    opacity: 75%;
+    padding: 150px;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+    h1{
+        margin-bottom: 20px;
     }
 }
