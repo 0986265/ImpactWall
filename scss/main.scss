@@ -39,3 +39,30 @@
 .item {
   display: none;
 }
+
+game {
+  display: block;
+  background-image: url("../media/images/main-bg.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+#anvil {
+
+}
+
+#goomba {
+  background-image: url("../media/images/goomba.png");
+  background-size: 100%;
+  display: block;
+  width: 200px;
+  height: 265px;
+  position: relative;
+  top: 800px;
+  animation: goomba 5s infinite linear;
+}
+
+@keyframes goomba {
+  0%{left: -100px;}
+  100%{left: 100%;}
+}
