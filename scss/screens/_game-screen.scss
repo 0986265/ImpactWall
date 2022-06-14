@@ -2,6 +2,23 @@
     height: 100%;
     background-color: $screen3;
 
+    .box {
+        position: absolute; 
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        background-color: $w;
+        opacity: 75%;
+        padding: 150px;
+        border-radius: 50px;
+        margin: auto;
+        text-align: center;
+        h1{
+            margin-bottom: 20px;
+        }
+    }
+
     .columns{
         display: flex;
         height: 100%;
