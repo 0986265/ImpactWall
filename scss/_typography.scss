@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
 * {
     font-family: 'Arial', 'sans-serif';
 }
 
 h1 {
-    font-family: 'Fredoka One';
+    font-family: 'Gameplay';
     font-size: 10rem;
     letter-spacing: .2rem;
 }   
 
 h2 {
+    font-family: 'Poppins';
+    font-weight: 'regular';
     font-size: 4rem;
 }
 
 p {
+    font-family: 'Poppins';
+    font-weight: lighter;
     font-size: 3rem;
 }

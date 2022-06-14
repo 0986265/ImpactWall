@@ -1,25 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Regular.woff2") format("woff2"), url("/media/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gameplay';
+  src: url("/media/fonts/Gameplay.woff2") format("woff2"), url("/media/fonts/Gameplay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kdam Thmor Pro';
+  src: url("/media/fonts/KdamThmorPro-Regular.woff2") format("woff2"), url("/media/fonts/KdamThmorPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Medium.woff2") format("woff2"), url("/media/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Light.woff2") format("woff2"), url("/media/fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Bold.woff2") format("woff2"), url("/media/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   font-family: 'Arial', 'sans-serif';
 }
 
 h1 {
-  font-family: 'Fredoka One';
+  font-family: 'Gameplay';
   font-size: 10rem;
   letter-spacing: .2rem;
 }
 
 h2 {
+  font-family: 'Poppins';
+  font-weight: 'regular';
   font-size: 4rem;
 }
 
 p {
+  font-family: 'Poppins';
+  font-weight: lighter;
   font-size: 3rem;
 }
 
 #cheat {
   position: absolute;
-  top: 995px;
+  top: 920px;
   left: 0px;
   z-index: 10;
   -webkit-box-pack: center;
@@ -42,8 +94,8 @@ p {
 }
 
 #cheat button {
-  width: 225px;
-  height: 175px;
+  width: 250px;
+  height: 250px;
   font-size: 25px;
   font-weight: bold;
   opacity: 0.75;
@@ -118,7 +170,7 @@ svg circle {
   text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.75);
   text-align: center;
   background-color: #eb5d5d;
-  background: url("/media/images/bg-brick-wall.jpg") no-repeat;
+  background: url("/media/images/main-bg.jpg") no-repeat;
 }
 
 #attract-screen h1 {
