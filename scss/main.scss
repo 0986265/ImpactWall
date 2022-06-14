@@ -48,7 +48,16 @@ game {
 }
 
 #anvil {
-
+  background-color: black;
+  background-size: 100%;
+  display: block;
+  width: 300px;
+  height: 265px;
+  position: relative;
+  top: 0px;
+  left: 40%;
+  animation: anvil 2s infinite linear;
+  z-index: 1;
 }
 
 #goomba {
@@ -58,11 +67,18 @@ game {
   width: 200px;
   height: 265px;
   position: relative;
-  top: 800px;
+  top: 500px;
   animation: goomba 5s infinite linear;
 }
 
 @keyframes goomba {
   0%{left: -100px;}
   100%{left: 100%;}
+}
+
+@keyframes anvil {
+  0%{top: 0px;}
+  10%{top: 700px;}
+  40%{top: 700px;}
+  100%{top: 0px;}
 }
