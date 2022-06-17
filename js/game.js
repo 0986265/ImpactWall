@@ -16,6 +16,6 @@ var checkCollision = setInterval(function() {
 
     if(anvilTop == 700 && paddoLeft > 650 && paddoLeft < 750) {
         paddo.classList.add("dead");
-        window.getComputedStyle(paddo).getPropertyValue("left") = paddoLeft;
+        paddo.style.left = paddoLeft;
     }
 })

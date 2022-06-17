@@ -79,6 +79,7 @@ game {
 .dead {
   background-image: url("../media/images/Paddoss_Killed.svg");
   animation: none;
+  left: 0px;
 }
 
 @keyframes paddo {
