@@ -56,11 +56,14 @@ game {
   position: relative;
   top: 0px;
   left: 40%;
-  animation: anvil 2s infinite linear;
   z-index: 1;
 }
 
-#paddo1 {
+.animate {
+  animation: anvil 1s linear;
+}
+
+.paddo1 {
   background-image: url("../media/images/Paddoss_Angry1.svg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -70,16 +73,17 @@ game {
   height: 365px;
   position: relative;
   top: 300px;
-}
-
-.animate {
   animation: paddo 5s infinite linear;
 }
 
+.dead {
+  background-image: url("../media/images/Paddoss_Killed.svg");
+  animation: none;
+}
 
 @keyframes paddo {
   0%{left: -100px;}
-  100%{left: 100%;}
+  100%{left: 1400px;}
 }
 
 @keyframes anvil {
