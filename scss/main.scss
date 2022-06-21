@@ -130,3 +130,24 @@ game {
 	60% {transform: translateX(9px) rotate(2.4deg);}
 	75% {transform: translateX(-6px) rotate(-1.2deg);}
 }
+
+.ja-button {
+  background-color: #9DCE7C;
+  font-family: 'Gameplay';
+  width: 800px;
+  height: 150px;
+  font-size: 50px;
+  color: white;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.nee-button {
+  background-color: #E45A69;
+    font-family: 'Gameplay';
+    width: 800px;
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    border-radius: 50px;
+}
