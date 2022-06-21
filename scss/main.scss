@@ -48,32 +48,43 @@ game {
 }
 
 #anvil {
-  background-color: black;
+  background-image: url("../media/images/Paddoss_Anvil.svg");
   background-size: 100%;
   display: block;
-  width: 300px;
-  height: 265px;
+  width: 400px;
+  height: 365px;
   position: relative;
   top: 0px;
   left: 40%;
-  animation: anvil 2s infinite linear;
   z-index: 1;
 }
 
-#goomba {
-  background-image: url("../media/images/goomba.png");
-  background-size: 100%;
-  display: block;
-  width: 200px;
-  height: 265px;
-  position: relative;
-  top: 500px;
-  animation: goomba 5s infinite linear;
+.animate {
+  animation: anvil 1s linear;
 }
 
-@keyframes goomba {
+.paddo1 {
+  background-image: url("../media/images/Paddoss_Angry1.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 300px;
+  height: 365px;
+  position: relative;
+  top: 300px;
+  animation: paddo 5s infinite linear;
+}
+
+.dead {
+  background-image: url("../media/images/Paddoss_Killed.svg");
+  animation: none;
+  left: 0px;
+}
+
+@keyframes paddo {
   0%{left: -100px;}
-  100%{left: 100%;}
+  100%{left: 1400px;}
 }
 
 @keyframes anvil {
