@@ -28,6 +28,23 @@
         }
     }
 
+    paddo{
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background-size: contain;
+        animation: unset;
+        &#paddo-1 {
+            width: 700px;
+            height: 700px;
+            top: 350px;
+            left: 130px;
+            background: url('/media/images/Paddoss_Angry1.svg') no-repeat;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
     #step-icon {
         position: absolute; 
         background: url('/media/images/intro-step-icon.svg') no-repeat;
