@@ -80,11 +80,23 @@ game {
   background-image: url("../media/images/Paddoss_Killed.svg");
   animation: none;
   left: 0;
+  animation: dead 3s linear;
 }
 
 @keyframes paddo {
+  100% {
+		transform: translateX(0%) scale(1);
+		transform-origin: 50% 50%;
+	}
+
   0%{left: -100px;}
+	15% {transform: translateX(-30px) rotate(-6deg) ;}
+	30% {transform: translateX(15px) rotate(6deg);}
+	45% {transform: translateX(-15px) rotate(-3.6deg) scale(1.1);}
+	60% {transform: translateX(9px) rotate(2.4deg);}
+	75% {transform: translateX(-6px) rotate(-1.2deg);}
   100%{left: 1400px;}
+  
 }
 
 @keyframes anvil {
@@ -92,6 +104,12 @@ game {
   10%{top: 700px;}
   40%{top: 700px;}
   100%{top: 0px;}
+}
+
+@keyframes dead {
+  0%{opacity: 100%;}
+  50%{opacity: 100%;}
+  100%{opacity: 0%;}
 }
 
 @keyframes scale-breath {
