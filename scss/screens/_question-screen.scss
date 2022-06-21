@@ -70,14 +70,24 @@
 
     .gemeenterotterdam{
         background: url('/media/images/gemeenterotterdam.svg') no-repeat;
-        padding: 100px;
         background-position: center;
+        height: 30%;
+        margin: 75px;
+        
     };
 
     .qrcode{
         background: url('/media/images/qrcode.svg') no-repeat;
-        padding: 100px;
+        margin: 75px;
         background-position: center;
+        height: 30%;
+    };
+
+    .QR{
+        background: url('/media/images/QR.svg') no-repeat;
+        margin: 75px;
+        background-position: center;
+        height: 30%;
     };
 
     .buttons-janee{
