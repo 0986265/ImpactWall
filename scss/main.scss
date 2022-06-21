@@ -80,9 +80,15 @@ game {
   background-image: url("../media/images/Paddoss_Killed.svg");
   animation: none;
   left: 0;
+  animation: dead 3s linear;
 }
 
 @keyframes paddo {
+  0%{left: -100px;}
+  100%{left: 1400px;}
+}
+
+@keyframes paddoIdle {
   0%{left: -100px;}
   100%{left: 1400px;}
 }
@@ -92,4 +98,10 @@ game {
   10%{top: 700px;}
   40%{top: 700px;}
   100%{top: 0px;}
+}
+
+@keyframes dead {
+  0%{opacity: 100%;}
+  50%{opacity: 100%;}
+  100%{opacity: 0%;}
 }
