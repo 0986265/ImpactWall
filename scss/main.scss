@@ -134,20 +134,24 @@ game {
 .ja-button {
   background-color: #9DCE7C;
   font-family: 'Gameplay';
-  width: 800px;
-  height: 150px;
-  font-size: 50px;
+  width: 700px;
+  height: 110px;
+  font-size: 2rem;
   color: white;
   border-radius: 50px;
+  margin-top: 50px;
   margin-bottom: 30px;
+  margin-left: 400px;
+
 }
 
 .nee-button {
   background-color: #E45A69;
     font-family: 'Gameplay';
-    width: 800px;
-    height: 150px;
-    font-size: 50px;
+    width: 700px;
+    height: 110px;
+    font-size: 2rem;
     color: white;
     border-radius: 50px;
+    margin-left: 400px;
 }

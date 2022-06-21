@@ -1,17 +1,25 @@
 #question-screen {
+    padding-right: 0px;
     height: 100%;
     background-color: $screen4;
-    background: url('/media/images/main-bg.jpg') no-repeat;
+    background: url('/media/images/question-bg.jpg') no-repeat;
 
     h1 {
-        font-size: 5rem;
+        font-size: 2rem;
         text-align: center;
         color:#DF663D;
     }
 
     h2 {
+        font-size: 2rem;
         text-align: center;
-        color: $w;
+        color: black;
+        margin-top: 20px;
+    }
+
+    p{
+        color: #DF663D;
+        text-align: center;
     }
 
     .box {
@@ -34,11 +42,11 @@
     .columns{
         display: flex;
         height: 100%;
-        margin-top: 100px;
     }
     .col-1 {
         flex: 2;
         z-index: 0;
+        margin-top: 100px;
     };
     .col-2 {
         flex: 0;
@@ -47,5 +55,22 @@
     .col-3 {
         flex: 1;
         z-index: 0;
+        background-color: $w;
+        opacity: 80%;
+
+    };
+
+    .questiontextbox{
+        background: url('/media/images/question-textbox.svg')  no-repeat;
+        width: 2000px; 
+        height: 120px;
+    };
+
+    .gemeenterotterdam{
+        background: url('/media/images/gemeenterotterdam.svg') no-repeat;
+    };
+
+    .qrcode{
+        background: url('/media/images/qrcode.svg') no-repeat;
     };
 }
