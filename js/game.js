@@ -19,5 +19,7 @@ var checkCollision = setInterval(function() {
         paddo.classList.add("dead"); //add new class
         var newPosition = document.querySelector('.dead'); //locate the class
         newPosition.style.left = newLeft + "px"; //change the left property to the stored position
+
+        setTimeout(() => { paddo.remove(); }, 3000); //Destroy Paddo
     }
 })

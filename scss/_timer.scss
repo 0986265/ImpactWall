@@ -1,11 +1,11 @@
 #countdown {
     position: absolute;
     margin: auto;
-    top: 200px;
-    right: 400px;
+    bottom: 82px;
+    right: 100px;
     height: 300px;
     width: 300px;
-    background-color: $w;
+    background-color: #e6e7e8;
     border-radius: 150px;
     text-align: center;
 }
@@ -33,7 +33,7 @@ svg circle {
     stroke-width: 20px;
     stroke: $primary;
     fill: none;
-    animation: countdown 15s linear forwards;
+    animation: countdown 10s linear forwards;
 }
 
 @keyframes countdown {

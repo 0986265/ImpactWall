@@ -66,7 +66,7 @@ function countdownTimer() {
   div.innerHTML += '<svg><circle r="135" cx="150" cy="150"></circle></svg>';
 
   let countdownNumber = document.getElementById('countdown-number');
-  let countdown = 15; //change this property also in _timer.scss
+  let countdown = 10; //change this property also in _timer.scss
   countdownNumber.textContent = countdown;
 
   let countdownTimer = setInterval(() => {
