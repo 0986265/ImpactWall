@@ -8,16 +8,33 @@
     .box {
         position: absolute; 
         background: url('/media/images/intro-textbox.svg') no-repeat;
-        height: 50%;
         top: 150px;
         left: 50%;
+        height: 640px;
+        width: 1400px;
         transform: translateX(-50%);
-        width: 80%;
         padding: 150px;
         margin: auto;
         text-align: center;
         h1{
             margin-bottom: 20px;
         }
+        h2 {
+            font-size: 3rem;
+        }
+        p {
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+    }
+
+    #step-icon {
+        position: absolute; 
+        background: url('/media/images/intro-step-icon.svg') no-repeat;
+        bottom: 100px;
+        left: 50%;
+        height: 300px;
+        width: 390px;
+        transform: translateX(-50%);
     }
 }

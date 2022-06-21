@@ -1,6 +1,9 @@
 #game-screen {
     height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color: $screen3;
+    background-image: url("../media/images/main-bg.jpg");
 
     .box {
         position: absolute; 
@@ -25,17 +28,16 @@
     }
     .col-1 {
         flex: 2;
-        border: 1px solid white;
         z-index: 0;
     };
     .col-2 {
         flex: 0;
-        border: 1px solid white;
         z-index: 0;
     };
     .col-3 {
         flex: 1;
-        border: 1px solid white;
         z-index: 0;
+        background-color: $w;
+        opacity: 80%;
     };
 }
