@@ -46,7 +46,7 @@
     .col-1 {
         flex: 2;
         z-index: 0;
-        margin-top: 100px;
+        margin: auto;
     };
     .col-2 {
         flex: 0;
@@ -62,8 +62,10 @@
 
     .questiontextbox{
         background: url('/media/images/question-textbox.svg')  no-repeat;
-        width: 2000px; 
-        height: 120px;
+        
+        padding: 100px;
+        background-position: center;
+
     };
 
     .gemeenterotterdam{
@@ -73,4 +75,9 @@
     .qrcode{
         background: url('/media/images/qrcode.svg') no-repeat;
     };
+
+    .buttons-janee{
+        width: 55%;
+        margin: auto;
+    }
 }
