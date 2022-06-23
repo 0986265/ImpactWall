@@ -40,5 +40,14 @@
         background-color: $w;
         opacity: 80%;
         text-align: center;
+        h1 {
+            margin-top: 10%;
+            margin-bottom: 10%;
+            font-size: 5rem;
+        }
+        h2 {
+            font-size: 3rem;
+            margin-top: 2%;
+        }
     };
 }

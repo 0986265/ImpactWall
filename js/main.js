@@ -74,8 +74,8 @@ function countdownTimer() {
     countdownNumber.textContent = countdown;
     if (countdown === undefined) {
       console.log('remove countdown');
-      // document.getElementById('countdown').remove();
-      // gameScreen();
+      document.getElementById('countdown').remove();
+      gameScreen();
     }
   }, 1000);
 }
