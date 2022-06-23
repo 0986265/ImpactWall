@@ -14,7 +14,7 @@ var checkCollision = setInterval(function() {
     var anvilTop = parseInt(window.getComputedStyle(anvil).getPropertyValue("top"));
     var paddoLeft= parseInt(window.getComputedStyle(paddo).getPropertyValue("left"));
 
-    if(anvilTop == 700 && paddoLeft > 650 && paddoLeft < 750) {
+    if(anvilTop == 700 && paddoLeft > 750 && paddoLeft < 850) {
         var newLeft = paddoLeft; //Store the current possition before it gets set back
         paddo.classList.add("dead"); //add new class
         var newPosition = document.querySelector('.dead'); //locate the class
