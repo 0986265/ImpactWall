@@ -79,3 +79,7 @@ function countdownTimer() {
     }
   }, 1000);
 }
+
+function questionrefresh() {
+  location.reload();
+}
