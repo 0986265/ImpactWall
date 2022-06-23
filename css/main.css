@@ -1,27 +1,423 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Regular.woff2") format("woff2"), url("/media/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gameplay';
+  src: url("/media/fonts/Gameplay.woff2") format("woff2"), url("/media/fonts/Gameplay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kdam Thmor Pro';
+  src: url("/media/fonts/KdamThmorPro-Regular.woff2") format("woff2"), url("/media/fonts/KdamThmorPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Medium.woff2") format("woff2"), url("/media/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Light.woff2") format("woff2"), url("/media/fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/media/fonts/Poppins-Bold.woff2") format("woff2"), url("/media/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Arial', 'sans-serif';
+}
+
 h1 {
-  text-align: center;
-  font-family: 'Fredoka One';
-  font-size: 5em;
+  font-family: 'Gameplay';
+  font-size: 8rem;
+  letter-spacing: .2rem;
 }
 
 h2 {
-  font-size: 10px;
+  font-family: 'Poppins';
+  font-weight: 'regular';
+  font-size: 3.5rem;
+}
+
+p {
+  font-family: 'Poppins';
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+#cheat {
+  position: absolute;
+  top: 920px;
+  left: 0px;
+  z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+#cheat.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#cheat button {
+  width: 250px;
+  height: 250px;
+  font-size: 25px;
+  font-weight: bold;
+  opacity: 0.75;
+  color: #ffffff;
+  background-color: #6c6c6c;
+  text-transform: uppercase;
+}
+
+#cheat button:hover, #cheat button:active {
+  background: #343434;
+}
+
+#countdown {
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  right: 400px;
+  height: 300px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 150px;
+  text-align: center;
+}
+
+#countdown-number {
+  display: inline-block;
+  color: #dc6640;
+  font-size: 100px;
+  line-height: 300px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  -webkit-transform: rotateY(-180deg) rotateZ(-90deg);
+          transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 848px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 20px;
+  stroke: #dc6640;
+  fill: none;
+  -webkit-animation: countdown 15s linear forwards;
+          animation: countdown 15s linear forwards;
+}
+
+@-webkit-keyframes countdown {
+  0% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 848px;
+  }
+}
+
+@keyframes countdown {
+  0% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 848px;
+  }
 }
 
 #attract-screen {
   height: 100%;
-  background-color: blue;
+  color: #ffffff;
+  text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  background-color: #eb5d5d;
+  background: url("/media/images/main-bg.jpg") no-repeat;
+}
+
+#attract-screen h1 {
+  font-size: 10rem;
+  -webkit-animation: pulse 4s ease-in-out 0s infinite normal none;
+          animation: pulse 4s ease-in-out 0s infinite normal none;
+}
+
+#attract-screen h2 {
+  -webkit-animation: fade 6s ease-in-out 0s infinite normal none;
+          animation: fade 6s ease-in-out 0s infinite normal none;
+}
+
+#attract-title {
+  position: relative;
+  top: 150px;
+}
+
+goomba {
+  position: absolute;
+  left: 450px;
+  bottom: 30px;
+  width: 250px;
+  height: 300px;
+  background: url("/media/images/goomba.png") no-repeat;
+  background-size: contain;
+}
+
+goombastack {
+  position: absolute;
+  right: 150px;
+  bottom: 20px;
+  width: 300px;
+  height: 975px;
+  background: url("/media/images/goomba-stack.png") no-repeat;
+  background-size: contain;
+}
+
+goombawings {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  width: 360px;
+  height: 360px;
+  background: url("/media/images/goomba-wings.png") no-repeat;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-size: contain;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fade {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fade {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.6;
+  }
 }
 
 #intro-screen {
   height: 100%;
-  background-color: green;
+  background-color: #6eeb5d;
+  background: url("/media/images/main-bg.jpg") no-repeat;
+}
+
+#intro-screen .box {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  background-color: #ffffff;
+  opacity: 75%;
+  padding: 150px;
+  border-radius: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+#intro-screen .box h1 {
+  margin-bottom: 20px;
 }
 
 #game-screen {
   height: 100%;
-  background-color: red;
+  background-color: #5d5feb;
+}
+
+#game-screen .box {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  background-color: #ffffff;
+  opacity: 75%;
+  padding: 150px;
+  border-radius: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+#game-screen .box h1 {
+  margin-bottom: 20px;
+}
+
+#game-screen .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#game-screen .col-1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  border: 1px solid white;
+  z-index: 0;
+}
+
+#game-screen .col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  border: 1px solid white;
+  z-index: 0;
+}
+
+#game-screen .col-3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid white;
+  z-index: 0;
+}
+
+#question-screen {
+  height: 100%;
+  background-color: #ebc55d;
+  background: url("/media/images/main-bg.jpg") no-repeat;
+}
+
+#question-screen h1 {
+  font-size: 5rem;
+}
+
+#question-screen h1, #question-screen h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+#question-screen .box {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  background-color: #ffffff;
+  opacity: 75%;
+  padding: 150px;
+  border-radius: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+#question-screen .box h1 {
+  margin-bottom: 20px;
+}
+
+#question-screen .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-top: 100px;
+}
+
+#question-screen .col-1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  z-index: 0;
+}
+
+#question-screen .col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  z-index: 0;
+}
+
+#question-screen .col-3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 0;
 }
 
 * {
@@ -30,17 +426,114 @@ h2 {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  overflow: hidden;
+}
+
+.screen {
+  padding-left: 175px;
+  padding-right: 175px;
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 #impact-wall {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 2572px;
-  height: 1170px;
+  top: 0px;
+  left: 0px;
+  width: 2533px;
+  height: 1171px;
 }
 
-#impact-wall .visible {
-  opacity: 100%;
+.item {
+  display: none;
+}
+
+game {
+  display: block;
+  background-image: url("../media/images/main-bg.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+#anvil {
+  background-image: url("../media/images/Paddoss_Anvil.svg");
+  background-size: 100%;
+  display: block;
+  width: 400px;
+  height: 365px;
+  position: relative;
+  top: 0px;
+  left: 40%;
+  -webkit-animation: anvil 2s infinite linear;
+          animation: anvil 2s infinite linear;
+  z-index: 1;
+}
+
+#paddo1 {
+  background-image: url("../media/images/Paddoss_Angry1.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 300px;
+  height: 365px;
+  position: relative;
+  top: 300px;
+}
+
+.animate {
+  -webkit-animation: paddo 5s infinite linear;
+          animation: paddo 5s infinite linear;
+}
+
+@-webkit-keyframes paddo {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes paddo {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes anvil {
+  0% {
+    top: 0px;
+  }
+  10% {
+    top: 700px;
+  }
+  40% {
+    top: 700px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes anvil {
+  0% {
+    top: 0px;
+  }
+  10% {
+    top: 700px;
+  }
+  40% {
+    top: 700px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

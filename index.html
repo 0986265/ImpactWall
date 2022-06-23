@@ -3,24 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <script src="js/game.js"></script>
-
-    <title>Document</title>
+    <script defer src="/js/main.js"></script>
+    <script defer src="/js/game.js"></script>
+    <title>IMPACT WALL</title>
 </head>
 <body>
+    <div id="cheat" class="">
+        <button id="toggle-attract" class="cheat-button">attract</button>
+        <button id="toggle-intro" class="cheat-button">intro</button>
+        <button id="toggle-game" class="cheat-button">game</button>
+        <button id="toggle-question" class="cheat-button">question</button>
+    </div>
+
     <div id="impact-wall">
-        <div id="attract-screen" class="visible">
-            <h1>Pssst...</h1>
-            <h2>meisje, kom dan</h2>
+        <div id="attract-screen" class="screen active">
+            <div id="attract-title">
+                <h1>IMPACT WALL</h1>
+                <h2>druk op de knop om verder te gaan</h2>
+            </div>
+            <paddo id="paddo-1"></paddo>
+            <paddo id="paddo-2"></paddo>
+            <paddo id="paddo-3"></paddo>
         </div>
-        <div id="intro-screen" class="">
-            <h1>intro-screen</h1>
-            <h2>meisje, kom dan</h2>
+        <div id="intro-screen" class="screen">
+            <div class="box">
+                <h1>Minigame</h1>
+                <h2>hier komt uitleg over de mini-game</h2>
+                <p>Hier komt een mooi stukje tekst over het spel. Wat weet ik ook nog niet maar dat is een probleem voor later. Omdat we moeten developen heb ik dit maar geschreven. Groetjes Bram. Houdoe!</p>
+            </div>
+            <paddo id="paddo-1"></paddo>
+            <div id="countdown">
+                <div id="countdown-number"></div>
+            </div>
         </div>
-        <div id="game-screen" class="">
-            <div id="paddestoel"></div>
+
+        <div id="game-screen" class="screen" onclick="drop()">
+            <div class="columns">
+                <div class="col-1">
+                    <game>
+                        <div id="anvil"></div>
+                        <div class="paddo1" id="paddo"></div>
+                    </game>
+                </div>
+                <div class="col-2">
+                    <h1>game-screen</h1>
+                    <h2>Col-2</h2>
+                </div>
+                <div class="col-3">
+                    <h1>Wist je dat?</h1>
+                    <br>
+                    <h2>data</h2>
+                    <p>Dikzakkie</p>
+                    <br>
+                    <h2>data</h2>
+                    <p>Dikzakkie</p>
+                    <br>
+                    <h2>data</h2>
+                    <br>
+                    <h2>data</h2>
+                    <p>Dikzakkie</p>
+                    <br>
+                    <h2>data</h2>
+                    <p>Dikzakkie</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="question-screen" class="screen">
+            <div class="columns">
+                <div class="col-1">
+                    <div class="questiontextbox"> 
+                    <h1>Straatintimidataie zou jij <br>ingrijpen als je het zou doen?</h1>
+                    <h2>Voor ja druk op de paddenstoel</h2>
+                    <div class="buttons-janee">
+                     <button id="ja-button" class="ja-button">Ja</button><br>
+                    <button id="nee-button" class="nee-button">Nee</button>
+                </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h1>Col-2</h1>
+                    <h2>Col-2</h2>
+                </div>
+                <div class="col-3">
+                    <h2>Meer weten</h2>
+                    <p>Straat intimidatie Rotterdam</p>
+                    <div class="gemeenterotterdam" ></div>
+                    <div class="qrcode"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

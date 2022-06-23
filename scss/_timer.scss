@@ -1,0 +1,46 @@
+#countdown {
+    position: absolute;
+    margin: auto;
+    bottom: 82px;
+    right: 100px;
+    height: 300px;
+    width: 300px;
+    background-color: #e6e7e8;
+    border-radius: 150px;
+    text-align: center;
+}
+
+#countdown-number {
+    display: inline-block;
+    color: $primary;
+    font-size: 100px;
+    line-height: 300px;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+    stroke-dasharray: 848px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 20px;
+    stroke: $primary;
+    fill: none;
+    animation: countdown 10s linear forwards;
+}
+
+@keyframes countdown {
+    0% {
+        stroke-dashoffset: 0px;
+   }
+    100% {
+        stroke-dashoffset: 848px;
+   }
+}

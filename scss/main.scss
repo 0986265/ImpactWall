@@ -1,9 +1,13 @@
+@import "fonts";
 @import "typography";
 @import "variables";
+@import "cheat";
+@import "timer";
 
 @import "screens/attract-screen";
 @import "screens/intro-screen";
 @import "screens/game-screen";
+@import "screens/question-screen";
 
 * {
   margin: 0;
@@ -11,17 +15,143 @@
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  // opacity: 0%;
+  overflow: hidden;
+}
+
+.screen {
+  padding-left: 175px;
+  padding-right: 175px;
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 #impact-wall {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 2572px;
-  height: 1170px;
+  top: 0px;
+  left: 0px;
+  width: 2532px + 1px;
+  height: 1170px + 1px;
+}
 
-  .visible {
-    opacity: 100%;
-  }
+.item {
+  display: none;
+}
+
+game {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#anvil {
+  background-image: url("../media/images/Paddoss_Anvil.svg");
+  background-size: 100%;
+  display: block;
+  width: 400px;
+  height: 365px;
+  position: relative;
+  top: 0px;
+  left: 40%;
+  z-index: 1;
+}
+
+.animate {
+  animation: anvil 1s linear;
+}
+
+.paddo1 {
+  background-image: url("../media/images/Paddoss_Angry1.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 300px;
+  height: 365px;
+  position: relative;
+  top: 300px;
+  animation: paddo 5s infinite linear;
+}
+
+.dead {
+  background-image: url("../media/images/Paddoss_Killed.svg");
+  animation: none;
+  left: 0;
+  animation: dead 3s linear;
+}
+
+@keyframes paddo {
+  100% {
+		transform: translateX(0%) scale(1);
+		transform-origin: 50% 50%;
+	}
+
+  0%{left: -100px;}
+	15% {transform: translateX(-30px) rotate(-6deg) ;}
+	30% {transform: translateX(15px) rotate(6deg);}
+	45% {transform: translateX(-15px) rotate(-3.6deg) scale(1.1);}
+	65% {transform: translateX(9px) rotate(2.4deg);}
+	90% {transform: translateX(-6px) rotate(-1.2deg);}
+  100%{left: 1700px;}
+  
+}
+
+@keyframes anvil {
+  0%{top: 0px;}
+  10%{top: 700px;}
+  40%{top: 700px;}
+  100%{top: 0px;}
+}
+
+@keyframes dead {
+  0%{opacity: 100%;}
+  50%{opacity: 100%;}
+  100%{opacity: 0%;}
+}
+
+@keyframes scale-breath {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.1);}
+	100% {transform: scale(1);}
+}
+
+@keyframes wobble-and-scale-breath {
+	0% {transform: scale(1);}
+	100% {
+		transform: translateX(0%) scale(1);
+		transform-origin: 50% 50%;
+	}
+
+	15% {transform: translateX(-30px) rotate(-6deg) ;}
+	30% {transform: translateX(15px) rotate(6deg);}
+	45% {transform: translateX(-15px) rotate(-3.6deg) scale(1.1);}
+	60% {transform: translateX(9px) rotate(2.4deg);}
+	75% {transform: translateX(-6px) rotate(-1.2deg);}
+}
+
+.ja-button {
+  background-color: #9DCE7C;
+  font-family: 'Gameplay';
+  width: 700px;
+  height: 110px;
+  font-size: 2rem;
+  color: white;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin: 20px auto;
+
+}
+
+.nee-button {
+  background-color: #E45A69;
+    font-family: 'Gameplay';
+    width: 700px;
+    height: 110px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50px;
+    margin: auto;
 }

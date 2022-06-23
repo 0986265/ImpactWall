@@ -1,4 +1,78 @@
 #attract-screen {
     height: 100%;
-    background-color: blue;
+    color: $w;
+    text-shadow: 0px 0px 50px rgba(0,0,0,0.75);
+    text-align: center;
+    background-color: $screen1;
+    background: url('/media/images/main-bg.jpg') no-repeat;
+    h1 {
+        font-size: 10rem;
+        animation: pulse 4s ease-in-out 0s infinite normal none;
+    }
+    
+    h2 {
+        animation: fade 6s ease-in-out 0s infinite normal none;
+    }
+}
+
+#attract-title {
+    position: relative;
+    top: 150px;
+}
+
+paddo{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-size: contain;
+    animation: scale-breath 5s ease 0s infinite normal forwards;
+    &#paddo-1 {
+        width: 500px;
+        height: 500px;
+        top: 480px;
+        left: 200px;
+        background: url('/media/images/Paddoss_Angry1.svg') no-repeat;
+        animation: wobble-and-scale-breath 5s ease 0s infinite normal forwards;
+    }
+    &#paddo-2 {
+        width: 500px;
+        height: 500px;
+        top: 450px;
+        left: 1850px;
+        background: url('/media/images/Paddoss_Angry2.svg') no-repeat;
+        animation: wobble-and-scale-breath 5s ease 0s infinite normal forwards;
+        animation-delay: -3000ms;
+    }
+    &#paddo-3 {
+        top: 550px;
+        left: 950px;
+        background: url('/media/images/Paddoss_Friendly.svg') no-repeat;
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes fade {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0.6;
+	}
 }
